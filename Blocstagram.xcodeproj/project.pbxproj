@@ -24,6 +24,10 @@
 		E054E9031A97CBD300F397A8 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E054E8F91A97CBD300F397A8 /* 9.jpg */; };
 		E054E9041A97CBD300F397A8 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E054E8FA1A97CBD300F397A8 /* 10.jpg */; };
 		E054E9071A97CC4A00F397A8 /* ImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E9061A97CC4A00F397A8 /* ImagesTableViewController.m */; };
+		E054E9481A9928E900F397A8 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E9471A9928E900F397A8 /* User.m */; };
+		E054E94B1A99291600F397A8 /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E94A1A99291600F397A8 /* Media.m */; };
+		E054E94E1A99296F00F397A8 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E94D1A99296F00F397A8 /* Comment.m */; };
+		E054E9511A9929D900F397A8 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E9501A9929D900F397A8 /* DataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,14 @@
 		E054E8FA1A97CBD300F397A8 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		E054E9051A97CC4A00F397A8 /* ImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImagesTableViewController.h; path = ../ImagesTableViewController.h; sourceTree = "<group>"; };
 		E054E9061A97CC4A00F397A8 /* ImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImagesTableViewController.m; path = ../ImagesTableViewController.m; sourceTree = "<group>"; };
+		E054E9461A9928E900F397A8 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E054E9471A9928E900F397A8 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E054E9491A99291600F397A8 /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Media.h; sourceTree = "<group>"; };
+		E054E94A1A99291600F397A8 /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Media.m; sourceTree = "<group>"; };
+		E054E94C1A99296F00F397A8 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		E054E94D1A99296F00F397A8 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		E054E94F1A9929D900F397A8 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		E054E9501A9929D900F397A8 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,14 @@
 				E054E8D21A97CB3B00F397A8 /* ViewController.m */,
 				E054E9051A97CC4A00F397A8 /* ImagesTableViewController.h */,
 				E054E9061A97CC4A00F397A8 /* ImagesTableViewController.m */,
+				E054E9461A9928E900F397A8 /* User.h */,
+				E054E9471A9928E900F397A8 /* User.m */,
+				E054E9491A99291600F397A8 /* Media.h */,
+				E054E94A1A99291600F397A8 /* Media.m */,
+				E054E94C1A99296F00F397A8 /* Comment.h */,
+				E054E94D1A99296F00F397A8 /* Comment.m */,
+				E054E94F1A9929D900F397A8 /* DataSource.h */,
+				E054E9501A9929D900F397A8 /* DataSource.m */,
 				E054E8D71A97CB3B00F397A8 /* Images.xcassets */,
 				E054E8D91A97CB3B00F397A8 /* LaunchScreen.xib */,
 				E054E8CA1A97CB3B00F397A8 /* Supporting Files */,
@@ -268,6 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E054E94E1A99296F00F397A8 /* Comment.m in Sources */,
+				E054E94B1A99291600F397A8 /* Media.m in Sources */,
+				E054E9511A9929D900F397A8 /* DataSource.m in Sources */,
+				E054E9481A9928E900F397A8 /* User.m in Sources */,
 				E054E8D31A97CB3B00F397A8 /* ViewController.m in Sources */,
 				E054E8D01A97CB3B00F397A8 /* AppDelegate.m in Sources */,
 				E054E8CD1A97CB3B00F397A8 /* main.m in Sources */,
@@ -456,6 +480,7 @@
 				E054E8EC1A97CB3B00F397A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E054E8ED1A97CB3B00F397A8 /* Build configuration list for PBXNativeTarget "BlocstagramTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +489,7 @@
 				E054E8EF1A97CB3B00F397A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
