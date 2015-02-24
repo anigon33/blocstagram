@@ -165,13 +165,15 @@
 
 #pragma mark - UIScrollViewDelegate
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     [self infiniteScrollIfNecessary];
 }
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    
-    
-}
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    static int i = 0;
+//    NSLog(@"scrollCount: %d",i);
+//    [self infiniteScrollIfNecessary];
+//    i++;
+//}
 
 /*
 // Override to support rearranging the table view.
