@@ -29,6 +29,7 @@
 		E054E94E1A99296F00F397A8 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E94D1A99296F00F397A8 /* Comment.m */; };
 		E054E9511A9929D900F397A8 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E9501A9929D900F397A8 /* DataSource.m */; };
 		E054E9541A9A5CCB00F397A8 /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E9531A9A5CCB00F397A8 /* MediaTableViewCell.m */; };
+		E054E9571A9BF29F00F397A8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E9561A9BF29F00F397A8 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		E054E9501A9929D900F397A8 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 		E054E9521A9A5CCB00F397A8 /* MediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaTableViewCell.h; sourceTree = "<group>"; };
 		E054E9531A9A5CCB00F397A8 /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
+		E054E9551A9BF29F00F397A8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E054E9561A9BF29F00F397A8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				E054E94D1A99296F00F397A8 /* Comment.m */,
 				E054E94F1A9929D900F397A8 /* DataSource.h */,
 				E054E9501A9929D900F397A8 /* DataSource.m */,
+				E054E9551A9BF29F00F397A8 /* LoginViewController.h */,
+				E054E9561A9BF29F00F397A8 /* LoginViewController.m */,
 				E054E8D71A97CB3B00F397A8 /* Images.xcassets */,
 				E054E8D91A97CB3B00F397A8 /* LaunchScreen.xib */,
 				E054E8CA1A97CB3B00F397A8 /* Supporting Files */,
@@ -297,6 +302,7 @@
 				E054E94B1A99291600F397A8 /* Media.m in Sources */,
 				E054E9541A9A5CCB00F397A8 /* MediaTableViewCell.m in Sources */,
 				E054E9511A9929D900F397A8 /* DataSource.m in Sources */,
+				E054E9571A9BF29F00F397A8 /* LoginViewController.m in Sources */,
 				E054E9481A9928E900F397A8 /* User.m in Sources */,
 				E054E8D31A97CB3B00F397A8 /* ViewController.m in Sources */,
 				E054E8D01A97CB3B00F397A8 /* AppDelegate.m in Sources */,
