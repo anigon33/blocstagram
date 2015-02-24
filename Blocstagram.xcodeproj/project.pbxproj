@@ -30,6 +30,7 @@
 		E054E9511A9929D900F397A8 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E9501A9929D900F397A8 /* DataSource.m */; };
 		E054E9541A9A5CCB00F397A8 /* MediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E9531A9A5CCB00F397A8 /* MediaTableViewCell.m */; };
 		E054E9571A9BF29F00F397A8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E9561A9BF29F00F397A8 /* LoginViewController.m */; };
+		E07CBDF21A9D41D90007106B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E07CBDF11A9D41D90007106B /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		E054E9531A9A5CCB00F397A8 /* MediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewCell.m; sourceTree = "<group>"; };
 		E054E9551A9BF29F00F397A8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		E054E9561A9BF29F00F397A8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E07CBDF11A9D41D90007106B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		E054E8BE1A97CB3A00F397A8 = {
 			isa = PBXGroup;
 			children = (
+				E07CBDF11A9D41D90007106B /* .gitignore */,
 				E054E8C91A97CB3B00F397A8 /* Blocstagram */,
 				E054E8E31A97CB3B00F397A8 /* BlocstagramTests */,
 				E054E8C81A97CB3B00F397A8 /* Products */,
@@ -280,6 +283,7 @@
 				E054E9011A97CBD300F397A8 /* 7.jpg in Resources */,
 				E054E9031A97CBD300F397A8 /* 9.jpg in Resources */,
 				E054E8DB1A97CB3B00F397A8 /* LaunchScreen.xib in Resources */,
+				E07CBDF21A9D41D90007106B /* .gitignore in Resources */,
 				E054E8D81A97CB3B00F397A8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
