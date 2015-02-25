@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class User;
-@interface Comment : NSObject
+@interface Comment : NSObject <NSCoding>
 @property (nonatomic, strong) NSString *idNumber;
 - (instancetype) initWithDictionary:(NSDictionary *)commentDictionary;
 @property (nonatomic, strong) User *from;

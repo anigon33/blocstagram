@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "UIKit/UIKit.h"
 @class User;
-@interface Media : NSObject
+@interface Media : NSObject <NSCoding>
 - (instancetype) initWithDictionary:(NSDictionary *)mediaDictionary;
 @property (nonatomic, strong) NSString *idNumber;
 @property (nonatomic, strong) User *user;
