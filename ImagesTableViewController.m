@@ -178,7 +178,7 @@
 //    [self infiniteScrollIfNecessary];
 //    i++;
 //}
-#pragma mark - BLCMediaTableViewCellDelegate
+#pragma mark - MediaTableViewCellDelegate
 
 - (void) cell:(MediaTableViewCell *)cell didTapImageView:(UIImageView *)imageView {
     self.lastTappedImageView = imageView;
@@ -207,6 +207,13 @@
         UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
         [self presentViewController:activityVC animated:YES completion:nil];
     }
+}
+-(void) cell:(MediaTableViewCell *)cell didTwoFingerPressImageView:(UIImageView *)imageView {
+    if (!cell.mediaItem.image) {
+        [self.images addObject:imageView];
+        
+    }
+    
 }
 #pragma mark - UIViewControllerTransitioningDelegate
 

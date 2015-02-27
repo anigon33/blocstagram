@@ -21,6 +21,9 @@
 @property (nonatomic, strong) NSLayoutConstraint *commentLabelHeightConstraint;
 @property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
+@property (nonatomic, strong) UITapGestureRecognizer *twoFingerPress;
+//@property(nonatomic) NSUInteger numberOfTouchesRequired;
+
 @end
 static UIFont *lightFont;
 static UIFont *boldFont;
@@ -42,6 +45,12 @@ static NSParagraphStyle *paragraphStyle;
         self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapFired:)];
         self.tapGestureRecognizer.delegate = self;
         [self.mediaImageView addGestureRecognizer:self.tapGestureRecognizer];
+
+        self.twoFingerPress = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(twoFingerFired:)];
+        self.twoFingerPress.delegate = self;
+        self.twoFingerPress.numberOfTouchesRequired = 2;
+        [self.mediaImageView addGestureRecognizer:self.twoFingerPress];
+        
         
         self.longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressFired:)];
         self.longPressGestureRecognizer.delegate = self;
@@ -122,6 +131,8 @@ static NSParagraphStyle *paragraphStyle;
     mutableParagraphStyle.firstLineHeadIndent = 20.0;
     mutableParagraphStyle.tailIndent = -20.0;
     mutableParagraphStyle.paragraphSpacingBefore = 5;
+    
+    
     
     paragraphStyle = mutableParagraphStyle;
 }
@@ -231,6 +242,12 @@ static NSParagraphStyle *paragraphStyle;
     if (sender.state == UIGestureRecognizerStateBegan) {
         [self.delegate cell:self didLongPressImageView:self.mediaImageView];
     }
+}
+-(void) twoFingerFired:(UITapGestureRecognizer *)sender {
+    if (sender.state == UIGestureRecognizerStateBegan){
+        [self.delegate cell:self didTwoFingerPressImageView:self.mediaImageView];
+    }
+    
 }
 //- (void) cell:(MediaTableViewCell *)cell didLongPressImageView:(UIImageView *)imageView {
 //    ShareViewController *shareVC = [[ShareViewController alloc] initWithMedia:cell.mediaItem];
