@@ -22,7 +22,7 @@
 @property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
 @property (nonatomic, strong) UITapGestureRecognizer *twoFingerPress;
-//@property(nonatomic) NSUInteger numberOfTouchesRequired;
+
 
 @end
 static UIFont *lightFont;

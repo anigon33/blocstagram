@@ -18,9 +18,12 @@
 @property (nonatomic, strong) NSMutableArray *items;
 @property (nonatomic, weak) UIImageView *lastTappedImageView;
 
+
+
 @end
 
 @implementation ImagesTableViewController
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -118,9 +121,16 @@
     
     return cell;
 }
+- (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    Media *mediaItem = [DataSource sharedInstance].mediaItems[indexPath.row];
+    if (mediaItem.downloadState == MediaDownloadStateNeedsImage) {
+        [[DataSource sharedInstance] downloadImageForMediaItem:mediaItem];
+    }
+}
+
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     Media *item = self.items[indexPath.row];
-     return [MediaTableViewCell heightForMediaItem:item width:CGRectGetWidth(self.view.frame)];
+    return [MediaTableViewCell heightForMediaItem:item width:CGRectGetWidth(self.view.frame)];
 }
 
 - (CGFloat) tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -153,11 +163,15 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
+
+#pragma mark - UIScrollViewDelegate
+
 - (void) refreshControlDidFire:(UIRefreshControl *) sender {
     [[DataSource sharedInstance] requestNewItemsWithCompletionHandler:^(NSError *error) {
         [sender endRefreshing];
     }];
 }
+
 - (void) infiniteScrollIfNecessary {
     NSIndexPath *bottomIndexPath = [[self.tableView indexPathsForVisibleRows] lastObject];
     
@@ -167,17 +181,16 @@
     }
 }
 
-#pragma mark - UIScrollViewDelegate
+
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     [self infiniteScrollIfNecessary];
 }
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//    static int i = 0;
-//    NSLog(@"scrollCount: %d",i);
+//- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView
+//                  willDecelerate:(BOOL)decelerate{
 //    [self infiniteScrollIfNecessary];
-//    i++;
 //}
+
 #pragma mark - MediaTableViewCellDelegate
 
 - (void) cell:(MediaTableViewCell *)cell didTapImageView:(UIImageView *)imageView {
@@ -210,7 +223,8 @@
 }
 -(void) cell:(MediaTableViewCell *)cell didTwoFingerPressImageView:(UIImageView *)imageView {
     if (!cell.mediaItem.image) {
-        [self.images addObject:imageView];
+        [[DataSource sharedInstance] downloadImageForMediaItem:cell.mediaItem];
+
         
     }
     
