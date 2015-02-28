@@ -18,5 +18,5 @@
 - (void) requestOldItemsWithCompletionHandler:(NewItemCompletionBlock)completionHandler;
 @property (nonatomic, strong, readonly) NSString *accessToken;
 - (void) downloadImageForMediaItem:(Media *)mediaItem;
-
+- (void) toggleLikeOnMediaItem:(Media *)mediaItem;
 @end
