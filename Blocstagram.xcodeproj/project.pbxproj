@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		264BEF50DFAD64636FD78C90 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA76A1D9EFDF47BC55865E2D /* libPods.a */; };
+		E00F87DE1AA28B6700C1D4A9 /* ComposeCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = E00F87DD1AA28B6700C1D4A9 /* ComposeCommentView.m */; };
 		E04A80021AA135440024978F /* CircleSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E04A80011AA135440024978F /* CircleSpinnerView.m */; };
 		E04A80051AA138600024978F /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E04A80041AA138600024978F /* LikeButton.m */; };
 		E054E8CD1A97CB3B00F397A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E054E8CC1A97CB3B00F397A8 /* main.m */; };
@@ -51,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		53ACBE7830589AB410BB8FCC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E00F87DC1AA28B6700C1D4A9 /* ComposeCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeCommentView.h; sourceTree = "<group>"; };
+		E00F87DD1AA28B6700C1D4A9 /* ComposeCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentView.m; sourceTree = "<group>"; };
 		E04A80001AA135440024978F /* CircleSpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSpinnerView.h; sourceTree = "<group>"; };
 		E04A80011AA135440024978F /* CircleSpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSpinnerView.m; sourceTree = "<group>"; };
 		E04A80031AA138600024978F /* LikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeButton.h; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				E054E9521A9A5CCB00F397A8 /* MediaTableViewCell.h */,
 				E054E9531A9A5CCB00F397A8 /* MediaTableViewCell.m */,
 				E070B7B31A9F987800842A20 /* ShareViewController.h */,
+				E00F87DC1AA28B6700C1D4A9 /* ComposeCommentView.h */,
+				E00F87DD1AA28B6700C1D4A9 /* ComposeCommentView.m */,
 				E070B7B41A9F987800842A20 /* ShareViewController.m */,
 				E070B7AA1A9E6BA400842A20 /* MediaFullScreenViewController.h */,
 				E070B7AB1A9E6BA400842A20 /* MediaFullScreenViewController.m */,
@@ -389,6 +394,7 @@
 				E054E94E1A99296F00F397A8 /* Comment.m in Sources */,
 				E054E94B1A99291600F397A8 /* Media.m in Sources */,
 				E054E9541A9A5CCB00F397A8 /* MediaTableViewCell.m in Sources */,
+				E00F87DE1AA28B6700C1D4A9 /* ComposeCommentView.m in Sources */,
 				E054E9511A9929D900F397A8 /* DataSource.m in Sources */,
 				E04A80021AA135440024978F /* CircleSpinnerView.m in Sources */,
 				E054E9571A9BF29F00F397A8 /* LoginViewController.m in Sources */,

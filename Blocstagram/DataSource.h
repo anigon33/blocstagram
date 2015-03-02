@@ -19,4 +19,6 @@
 @property (nonatomic, strong, readonly) NSString *accessToken;
 - (void) downloadImageForMediaItem:(Media *)mediaItem;
 - (void) toggleLikeOnMediaItem:(Media *)mediaItem;
+- (void) commentOnMediaItem:(Media *)mediaItem withCommentText:(NSString *)commentText;
+
 @end
