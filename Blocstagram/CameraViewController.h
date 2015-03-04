@@ -17,7 +17,6 @@
 @end
 
 @interface CameraViewController : UIViewController
-
 @property (nonatomic, weak) NSObject <CameraViewControllerDelegate> *delegate;
 
 @end
