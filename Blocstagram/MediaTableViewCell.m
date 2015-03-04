@@ -253,7 +253,6 @@ static NSParagraphStyle *paragraphStyle;
 
 - (void) tapFired:(UITapGestureRecognizer *)sender {
     [self.delegate cell:self didTapImageView:self.mediaImageView];
-    
 }
 #pragma mark - UIGestureRecognizerDelegate
 
@@ -265,6 +264,7 @@ static NSParagraphStyle *paragraphStyle;
         [self.delegate cell:self didLongPressImageView:self.mediaImageView];
     }
 }
+
 -(void) twoFingerFired:(UITapGestureRecognizer *)sender {
     if (sender.state == UIGestureRecognizerStateBegan){
         [self.delegate cell:self didTwoFingerPressImageView:self.mediaImageView];
