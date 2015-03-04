@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UIImage+ImageUtilities.h">
+   </FileRef>
+   <FileRef
+      location = "group:UIImage+ImageUtilities.m">
+   </FileRef>
+   <FileRef
       location = "group:Blocstagram.xcodeproj">
    </FileRef>
    <FileRef
