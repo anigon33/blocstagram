@@ -60,7 +60,7 @@ static NSString * const reuseIdentifier = @"Cell";
     UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.collectionViewLayout;
     flowLayout.itemSize = CGSizeMake(cellSize, cellSize);
     flowLayout.minimumInteritemSpacing = 0;
-    flowLayout.minimumLineSpacing = 0;
+    flowLayout.minimumLineSpacing = 10;
     flowLayout.headerReferenceSize = CGSizeMake(width, 30);
 }
 - (void) viewWillAppear:(BOOL)animated {
@@ -114,14 +114,14 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     // Get reference to your image base on indexPath here (I assume you have one section and indexPath.row refer to right image) adjust if needed:
-    static CGFloat height = 40.0;
-    static CGFloat width = 40.0;
+    CGFloat height = 100.0;
+    CGFloat width = 80.0;
     
     CGSize imgSize = CGSizeMake(width, height);
     //Adjust if needed
-    height = height + 7;
-    width = width + 7;
-    
+//    height = height + 7;
+//    width = width + 7;
+//    
     return imgSize;
 }
 
