@@ -31,6 +31,8 @@
     return @"35ca6ef2b7774fe9ab303fc34b92db79";
     
 }
+NSString *const ImageFinishedNotification = @"ImageFinishedNotification";
+
 
 + (instancetype) sharedInstance {
     static dispatch_once_t once;
@@ -364,5 +366,7 @@
         [self reloadMediaItem:mediaItem];
     }];
 }
-
+- (void)documentInteractionController:(UIDocumentInteractionController *)controller didEndSendingToApplication:(NSString *)application {
+    [[NSNotificationCenter defaultCenter] postNotificationName:ImageFinishedNotification object:self];
+}
 @end

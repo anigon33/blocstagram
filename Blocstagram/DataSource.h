@@ -10,6 +10,8 @@
  @class Media;
  typedef void (^NewItemCompletionBlock)(NSError *error);
 @interface DataSource : NSObject
+extern NSString *const ImageFinishedNotification;
+
 +(instancetype) sharedInstance;
 + (NSString *) instagramClientID;
 @property (nonatomic, strong, readonly) NSArray *mediaItems;
@@ -20,5 +22,6 @@
 - (void) downloadImageForMediaItem:(Media *)mediaItem;
 - (void) toggleLikeOnMediaItem:(Media *)mediaItem;
 - (void) commentOnMediaItem:(Media *)mediaItem withCommentText:(NSString *)commentText;
+
 
 @end
