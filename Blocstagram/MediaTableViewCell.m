@@ -238,7 +238,7 @@ static NSParagraphStyle *paragraphStyle;
     }
     
 }
-#pragma mark - BLCComposeCommentViewDelegate
+#pragma mark - ComposeCommentViewDelegate
 
 - (void) commentViewDidPressCommentButton:(ComposeCommentView *)sender {
     [self.delegate cell:self didComposeComment:self.mediaItem.temporaryComment];

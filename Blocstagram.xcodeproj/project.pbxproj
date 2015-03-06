@@ -45,6 +45,11 @@
 		E0AF59821AA77A9900AA7CC2 /* CropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF59811AA77A9900AA7CC2 /* CropImageViewController.m */; };
 		E0AF59851AA77D7C00AA7CC2 /* ImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF59841AA77D7C00AA7CC2 /* ImageLibraryViewController.m */; };
 		E0AF598A1AA7B65500AA7CC2 /* PostToInstagramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF59891AA7B65500AA7CC2 /* PostToInstagramViewController.m */; };
+		E0AF598C1AA8D82B00AA7CC2 /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF598B1AA8D82B00AA7CC2 /* UserTests.m */; };
+		E0AF598E1AA8D8D200AA7CC2 /* CommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF598D1AA8D8D200AA7CC2 /* CommentTests.m */; };
+		E0AF59901AA8D9F200AA7CC2 /* MediaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF598F1AA8D9F200AA7CC2 /* MediaTests.m */; };
+		E0AF59921AA8DBA600AA7CC2 /* ComposeCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF59911AA8DBA600AA7CC2 /* ComposeCommentTests.m */; };
+		E0AF59941AA8DE2200AA7CC2 /* MediaTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF59931AA8DE2200AA7CC2 /* MediaTableViewTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +127,11 @@
 		E0AF59841AA77D7C00AA7CC2 /* ImageLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLibraryViewController.m; sourceTree = "<group>"; };
 		E0AF59881AA7B65500AA7CC2 /* PostToInstagramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostToInstagramViewController.h; sourceTree = "<group>"; };
 		E0AF59891AA7B65500AA7CC2 /* PostToInstagramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostToInstagramViewController.m; sourceTree = "<group>"; };
+		E0AF598B1AA8D82B00AA7CC2 /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
+		E0AF598D1AA8D8D200AA7CC2 /* CommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTests.m; sourceTree = "<group>"; };
+		E0AF598F1AA8D9F200AA7CC2 /* MediaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTests.m; sourceTree = "<group>"; };
+		E0AF59911AA8DBA600AA7CC2 /* ComposeCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeCommentTests.m; sourceTree = "<group>"; };
+		E0AF59931AA8DE2200AA7CC2 /* MediaTableViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaTableViewTests.m; sourceTree = "<group>"; };
 		EA76A1D9EFDF47BC55865E2D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6102A40DC499A051E354DD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +235,11 @@
 			isa = PBXGroup;
 			children = (
 				E054E8E61A97CB3B00F397A8 /* BlocstagramTests.m */,
+				E0AF59911AA8DBA600AA7CC2 /* ComposeCommentTests.m */,
+				E0AF59931AA8DE2200AA7CC2 /* MediaTableViewTests.m */,
+				E0AF598B1AA8D82B00AA7CC2 /* UserTests.m */,
+				E0AF598D1AA8D8D200AA7CC2 /* CommentTests.m */,
+				E0AF598F1AA8D9F200AA7CC2 /* MediaTests.m */,
 				E054E8E41A97CB3B00F397A8 /* Supporting Files */,
 			);
 			path = BlocstagramTests;
@@ -465,6 +480,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0AF59921AA8DBA600AA7CC2 /* ComposeCommentTests.m in Sources */,
+				E0AF598C1AA8D82B00AA7CC2 /* UserTests.m in Sources */,
+				E0AF598E1AA8D8D200AA7CC2 /* CommentTests.m in Sources */,
+				E0AF59901AA8D9F200AA7CC2 /* MediaTests.m in Sources */,
+				E0AF59941AA8DE2200AA7CC2 /* MediaTableViewTests.m in Sources */,
 				E054E8E71A97CB3B00F397A8 /* BlocstagramTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
